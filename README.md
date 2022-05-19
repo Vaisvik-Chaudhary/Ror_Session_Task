@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# Ror_Session_Task
+>>>>>>> e9f6d43b5bad55bf7007e29d41058f79ad3c4991
