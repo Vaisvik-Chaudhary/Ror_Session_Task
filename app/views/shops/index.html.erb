@@ -1,0 +1,29 @@
+
+<p style="color: green"><%= notice %></p>
+
+<h1>Product Lists</h1>
+
+<div id="products">
+  <% @products.each do |product| %>
+    <%= render product %>
+    <p>
+      <%= link_to "Show", shop_path(product) %> 
+
+      <%= form_for @order_item, remote: true do |f| %>
+      <%= f.hidden_field :product_id, :value => product.id%>
+      <%= f.number_field :quantity, :value => 1, :min => 1%>
+      <%= f.submit "Add to Cart"%> 
+      
+  <% end %>
+      <% end %>
+    </p>
+    
+</div>
+
+<br>
+
+<div id="card">
+  <%= render 'cards/card'%>
+</div>
+
+
