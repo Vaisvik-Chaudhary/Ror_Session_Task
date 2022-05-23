@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'cards/show'
+  # get 'cards/show'
   resources :products
   resources :shops, only:[:index, :show]
  
